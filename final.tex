@@ -70,24 +70,72 @@ Since POLYLINE represents a set of coordinates recorded every fifteen seconds si
 T_i = 15(N_i -1)
 \end{equation}
 \par
-To be more general, we convert the duration into minutes by dividing it by 60.
+To be more general, we convert the duration into minutes by dividing it by 60.\\
 
 \noindent{\textbf{\large{The probability family of distribution of trip duration:}}}\\
 \par
-Now we have a column called trip duration, so we use hist to plot the trip duration into an histogram with the x axis as the trip duration and the y axis as the density. The probability of trip duration is found to be a gamma distribution family in the interval [0, 970], but because most of time is distributed within the starting proportion , which makes the original histogram hard to be observed, we shrink the range of x axis to [0, 100]. However, the gamma distribution seems to only exist in [1,100] because the probability that the trip time is under a minute is too high too fit into the gamma distribution.
+Now we have a column called trip duration, so we use hist to plot the trip duration into a histogram with the x-axis
+ as the trip duration and the y-axis as the density. The probability of trip duration is found to be a gamma
+ distribution family in the interval [0, 970], but because most of the time is distributed within the [0,20],
+ which makes the original histogram hard to be observed, we shrink the range of x-axis to [0, 100]. However,
+ the gamma distribution seems to only exist in [1,100] because the probability that the trip time is under a minute
+ is too high to fit into the gamma distribution.
 
-\includegraphics[scale = .75]{DensityDistTripTime.png}
+\includegraphics[scale = .5]{hist_p1_1.png}\\
 
-\noindent{\textbf{\large{Verify the hypothesis:}}}
+
+\noindent{\textbf{\large{Verify the hypothesis:}}}\\
 \par
-To test whether the probability density of trip duration is the gamma family of distribution, we apply the actual curve of gamma distribution. Therefore, we need to find the r and lambda value, which are found to be 1.0947 and 0.0917.
+To test whether the probability density of trip duration is the gamma family of distribution, we apply the actual
+ curve of the gamma distribution. Therefore, we need to find the r and lambda value using mean and variance, and
+ the mean and variance of time duration are found to be approximately 11.57 and 130.13, and r and lambda are found
+ to be 1.0294 and 0.0889. However, the gamma distribution curve does not fit the histogram so much,  r value seeming
+ to be too small. 
 
-\includegraphics[scale = .75]{ECDF(time_dat$time).png}
+
+\includegraphics[scale = .50]{cdf_p1_1.png}
 
 \par
-We also compare empirical cdf of T and cdf of gamma distribution with r and lambda which we just found. However, they don’t match well 
+Then, We compare the empirical cdf of T with the cdf of gamma distribution with r and lambda which we just found.
+ However, they don’t match well either. \\
 
-\noindent{\textbf{\large{Exploring the distribution of proportion of driver is busy:}}}\\\\
+\noindent{\textbf{\large{First Correction}}}\\
+\par
+Since the proportion that the time duration is under one minute is too high, we decide to exclude it from the dataset
+ and get a more rational look in the histogram. Then, we get the new mean, variance, r, and lambda,10.94, 129.88,
+ 1.029, and 0.0889. The new gamma distribution curve turns out to be more inaccurate, but the slope is actually a
+ little bit similar to the histogram's downward slope. When we compare the empirical cdf with the cdf of our new
+ database and new gamma distribution, the difference between them is not smaller than the original difference.\\
+\includegraphics[scale = .30]{hist_p1_2.png}
+\includegraphics[scale = .30]{cdf_p1_2.png}\\
+
+
+\noindent{\textbf{\large{Second Correction}}}\\
+\par
+The unsuccess of fitting a gamma distribution curve to the histogram is due to the high value of variance,
+ which is 130 for the distribution excluding the aberrantly high proportion, that yields a small r. In fact,
+ the support of T could be any value less or equal to 970, and that can lead to a very large variance with
+ respect to the concentrated proportion [0,20]. With a large value of r, gamma distribution turns out to be
+ steep and inaccurate; therefore. We decide to shrink the range to [1,61] by excluding every other value from
+ the vector, and that forms a smaller mean and much smaller variance, 10.39 and 51.56, which yields a larger
+ r and lambda, 2.09 and 0.201. Adding the curve, it fits much closer; comparing both empirical cdf and cdf of
+ the gamma distribution, the result, as expected, comes up ideally. Therefore, we can confidently say the density
+ of probability of trip time is the distribution of the gramma family since the proportion of interval [1,61]
+ occupies 96.4\% out of all distribution.\\
+
+\includegraphics[scale = .50]{hist_p1_3.png}\\
+\includegraphics[scale = .50]{cdf_p1_3.png}\\
+
+\par
+The trip duration shows that people averagely take about 11 minutes to their destination but most likely within
+ 20 minutes. Because most of the probability, about 95\%, is distributed in [0,25].
+\par
+The extremely high proportion of trip duration being under one minute may be caused by human errors and instrument
+ errors: drivers mistakenly or accidentally press the in-operation button, passengers' instantly calling it off,
+ and technique issues. We observe that many POLYLINE don't have value, which explains that the coordination
+ recorder doesn't work correctly in some cases. 
+
+\noindent{\textbf{\large{Exploring the distribution of proportion of driver is busy:}}}\\
 \textbf{Definition of Busy:}
 
 \par
