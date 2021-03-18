@@ -351,4 +351,33 @@ In the prediction part of modeling we decided we will be predicting the time dur
 	\item Predict Time Duration using Speed and time of the day only
 	\item Predict Time Duration using Distance, Speed, Time, and Type of Call
 \end{itemize}
+
+\noindent{\textbf{\LARGE{Analysis}}}\\
+\par
+\textbf{Predict Time Duration using Distance only}
+\par
+We found that this gave us really good results up to an extent with the density curves somewhat going along the actual values.
+
+\textbf{Predict Time Duration using Speed and time of the day only}
+\par
+We found that this results in a really bad prediction since the speed and time of day alone cannot really predict the duration of the trip. We can see in the density graphs that this no way resembles the actual data.
+
+\textbf{Predict Time Duration using Distance, Speed, Time, and Type of Call}
+\par
+This gave us the most accurate results with the KNN model almost exactly coinciding with the actual data. We deciphered that giving the model more parameters to train on, the model can correlate more values and thus can give us better predictions.
+
+\noindent{\textbf{\LARGE{Confidence Interval for Linear model}}}\\
+\par
+To find the confidence interval for the linear model, we first had to find the $q_{\alpha/2}$ values. We found them by using the qgamma function with the rate and shape same as those of the actual data and p as 0.025.
+\begin{lstlisting}
+z = qgamma(0.025, mean(actual$dur) ^ 2 / var(actual$dur), 
+    mean(actual$dur) / var(actual$dur))
+\end{lstlisting}
+\par
+Now the next step was to find the standard error which can be found using a simple formula.
+\begin{lstlisting}
+se = sqrt(sum((actual - prediction) ^ 2) / n)
+\end{lstlisting}
+Now that we have both, the z and se, we can find the intervals as $T \pm q_{\alpha/2} s.e.(T)$
+
 \end{document}
