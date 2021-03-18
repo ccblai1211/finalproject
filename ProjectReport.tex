@@ -197,13 +197,20 @@ The extremely high proportion of trip duration being under one minute may be cau
  and technique issues. We observe that many POLYLINE don't have value, which explains that the coordination
  recorder doesn't work correctly in some cases. 
 
+
 \noindent{\textbf{\large{Exploring the distribution of proportion of driver is busy:}}}\\
 \textbf{Definition of Busy:}
 
 \par
-Literally, drivers being busy means they are working, but in order to calculate the proportion of drivers being busy, we also need to know when they are not busy, waiting for passengers or including they time are are off work, We assume that taxi drivers don’t have specifical time to work and amount of operating time, so we decide to define the total time as ones career life recorded in the database, from the beginning of a driver’s first trip to the ending time of his last trip. Since each driver has an unique id number, we can track the sum of trip duration as the total working time 
-of $i^{th}$ driver, denoting as $U_{i}$, and Let $T_i$ denotes to the total time of $i^{th}$ driver, $R_{i_j}$ denotes to the $j^{th}$ trip duration of the $i^{th}$ driver, $N_i$ denotes to the number of trips $i^{th}$ driver have completed, and $B_i$ denotes to the proportion of time $i^{th}$ driver being busy; the time can be calculated as
-
+Literally, drivers being busy means they are working, but in order to calculate the proportion of drivers being
+ busy, we also need to know when they are not busy, waiting for passengers or including the time they are off work.
+ We assume that taxi drivers don't have specific times to work, so we decided to define the total time as one's
+ career life recorded in the database, from the beginning of a driver's first trip to the ending plus the time of
+his last trip. Therefore, we will have a number of data points equal to the number of drivers. Since each driver
+ has a unique id number, we can track the sum of trip duration as the total working time 
+of $i^{th}$ driver, denoting as $U_{i}$, and Let $T_i$ denotes to the total time of $i^{th}$ driver, $R_{i_j}$ denotes
+ to the $j^{th}$ trip duration of the $i^{th}$ driver, $N_i$ denotes to the number of trips $i^{th}$ driver have
+ completed, and $B_i$ denotes to the proportion of time $i^{th}$ driver being busy; the time can be calculated as
 \begin{equation}
 T_i =TimeStamp_{i last}-TimeStamp_{i first} +R_{iN_i}
 \end{equation}
@@ -222,11 +229,76 @@ Then, the proportion is
 B_i = \frac{U_i}{T_i}
 \end{equation}
 
+\par
+ We also develop another method to calculate the proportion of drivers being busy. Instead of using the total
+ time of driving and in career, this method uses the trip duration of a trip divided by the time between two closest
+ trips. Let $S_{i_j}$ be the time stamp recorded for $j^{th}$ trip of i th driver. A point of the proportion of a driver
+ being busy is
+
+\begin{equation}
+B_{ij} = \frac{R_{ij}}{S_{i+1 j}-S_{ij}}
+\end{equation}
+
+\par
+We will exclude all drivers' last trips since there are no next timestamps for the last trips.
+ This reflects the frequency where the busiest time is. 
+
+\noindent\textbf{Probability Distribution:}
+\par
+Using the method applied to the average of each driver, Plotting B into the histogram, we get an approximately
+ normal distribution in the range of (0,0.23]. As we observe, there are some extreme cases that drivers only
+ work about 0.005 of their time involved in this career, an average of 0.12 hours a day. 
+
 \textbf{Probability Distribution:}
 \par
 Plotting B into the histogram, we get an approximate normal distribution in the range of (0,0.23]. As we observe there are some extreme cases that drivers only work about 0.005 of their time involved in this career, averagely 0.12 hour a day.
 
 \noindent\includegraphics{Hist(PropActDriv).png}\\
+\par
+Applying another method using the frequency of trips, We have a distribution like a gamma distribution in the
+ range[0.1, 0.8], but there are many extreme cases between (0, 0.1). The mean is 0.253 with a variance of 0.768.
+
+\noindent\includegraphics{hist_p2_m2.png}\\
+
+\noindent\textbf{Verify the hypophysis:}\\
+\par
+To test the first method's accuracy, we apply the pdf for normal distribution with mean, variance, and standard deviation,
+0.0877, 0.00118, and 0.0344, and the curve fits passably. We further compare the empirical cdf and cdf of the normal distribution,
+and it turns out to be accurate with the small difference between them. \\
+
+\noindent\includegraphics{Busy_time_cdf.png}\\
+\par
+On the other hand, when we apply the gamma family distribution with r  the curve does not show up. The reason is the large value of variance
+in the data. As we can see, many data points have over 100% busy time, and we think it’s legal since a driver can possibly have more than one
+trip simultaneously. We also think there exist multiple distributions in the density of this model, so we don’t think fitting a specific family
+of distribution is ideal. \\
+
+\noindent\textbf{Correction:}\\
+\par
+The initial assumption is to say there are no special working hours for drivers, but we also assume their operating hours are 24 hours,
+which misleads the result because no one really works that much. We decide to multiply the busy proportion by three, so we now assume they
+work 8 hours per day; even though it’s inappropriate to say the average working time is 8 hours without evidence, that raises the readability
+and realisticity.
+
+\noindent\includegraphics{8_hour_busy_time.png}\\
+\par
+After setting the operating hours to 8, we still have a normal distribution. We also apply both empirical cdf and cdf of the normal distribution,
+and the result is acceptable with less compatibility than the original distribution. However, readability is the key to this improvement.\\
+
+\noindent\includegraphics{8_hour_busy_time_cdf.png}\\
+
+\noindent\textbf{Analysis:}\\
+\par
+From that method calculating the proportion of drivers being busy for each driver, we know how much proportion of drivers have different working
+hours per day. We observe that the mean proportion is 0.27, meaning that the mean of working hours of drivers is 2.16 hours per day. We also discover
+that a certain proportion represents “lazy drivers,” in the interval (0, 0.01], who only work 4.8 minutes per day. This method contains certain errors,
+such as lowering the effort of drivers who take a vacation.
+\par
+	The other method potentially provides the information of how quickly a driver can get another guest since it uses the intervals between two closest
+	trips. If a driver just finishes a trip with a duration of 10 minutes, he is likely to get his next guest in 7.2 minutes. The extreme cases in the
+	range (0,0.01) represent the trips having the interval over a day or days, meaning they get off work.
+
+
 
 \noindent{\textbf{\LARGE{Investigation of average trip times using CALLTYPE:}}}
 % \centering\noindent\includegraphics{Part3(Code).png}\\
@@ -345,7 +417,9 @@ Max(Call Type C) =&& 970
 
 \par
 We also find that there is only 1 entry with Call Type 'A' with a time greater than 500 minutes. For Call Type 'B', there are 6, and for Call Type 'C', there are 38. 
-This could be explained by a difference of dataset numbers. So the percentages were calculated, and it was found that 0.000274 \%, 0.000734 \%, and 0.00720 \%
+This could be explained by a difference of dataset numbers. So the percentages were calculated, and it was found that 0.000274 \%, 0.000734 \%, and 0.00720 \% for 
+Call Types 'A', 'B', and 'C' respectively. Thus, it can be said there are in fact more long (>500 min) trips in the Call Type 'C' category than there are in 'A' and 
+'B'. This also helps explain Call Type 'C's' higher variance.
 
 \noindent{\textbf{\LARGE{Moddling the Data}}}\\
 \textbf{Models:}
@@ -461,6 +535,32 @@ Now the next step was to find the standard error which can be found using a simp
 se = sqrt(sum((actual - prediction) ^ 2) / n)
 \end{lstlisting}
 Now that we have both, the z and se, we can find the intervals as $T \pm q_{\alpha/2} s.e.(T)$
+
+\textbf{Contributions}
+\begin{itemize}
+	\item Parth: \begin{itemize}
+		\item Worked on finding the distribution curve for the duration and finding the model for it.
+		\item Worked on finding the proportion of time a driver is busy and fitting it to a model.
+		\item Found the mean times for each call type and calculated the confidence intervals for the difference in the means.
+		\item Calculated the distance between 2 coordinated using Haversine distance.
+		\item Developed Linear, PolyLin and KNN models for distance, speed and call types. 
+		\item Created a fuction to compare multiple models using their density distribution curves and then mapping them with the actual data to check their prediction power.
+		\item Helped compile the final Latex Document.
+	\end{itemize}
+	\item Simerpal: \begin{itemize}
+		\item
+	\end{itemize}
+	\item Claire: \begin{itemize}
+		\item Worked on finding the distribution curve for the trip duration and finding a model 
+		\item Worked on finding the proportion of time a driver was busy and fitting it to a model
+		\item Worked on finding the proportion of time a driver was busy while assuming an eight hour work day and fitting it to a model
+		\item Worked on finding the mean times for each all type and their confidence intervals
+		\item Worked on developing Linear, PolyLin, KNN, and GBoost models for time of the day and day of the year
+	\end{itemize}
+	\item Brian:\begin{itemize}
+		\item Worked on
+	\end{itemize}
+\end{itemize}
 
 \appendix
 \section*{Appendix}

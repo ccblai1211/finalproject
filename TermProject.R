@@ -254,6 +254,7 @@ partD <- function() {
 
 trainData <- readData()
 
-partAB()
-partC()
-partD()
+# partAB()
+# partC()
+# partD()
+c

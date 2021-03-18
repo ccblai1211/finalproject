@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.2)  18 MAR 2021 07:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.2)  18 MAR 2021 07:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -357,7 +357,6 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 42.
 LaTeX Info: Redefining \pageref on input line 42.
 LaTeX Info: Redefining \nameref on input line 42.
- (/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.out) (/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.out)
 \@outlinefile=\write3
 \openout3 = `ProjectReport.out'.
 
@@ -419,48 +418,16 @@ File: cdf_p1_3.png Graphic file (type png)
 <use cdf_p1_3.png>
 Package pdftex.def Info: cdf_p1_3.png  used on input line 189.
 (pdftex.def)             Requested size: 394.47278pt x 289.83209pt.
- [6 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_3.png>]
-Overfull \hbox (14.5396pt too wide) in paragraph at lines 204--206
-\OT1/cmr/m/n/10.95 work and amount of op-er-at-ing time, so we de-cide to de-fine the to-tal time as ones ca-reer life recorded 
- []
-
-[7 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_3.png>]
-Overfull \hbox (1.67345pt too wide) in paragraph at lines 227--228
+ [6 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_3.png>] [7 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_3.png>]
+Overfull \hbox (1.67345pt too wide) in paragraph at lines 254--255
 []\OT1/cmr/m/n/10.95 Plotting B into the his-togram, we get an ap-prox-i-mate nor-mal dis-tri-bu-tion in the range of (0,0.23]. 
  []
 
-<Hist(PropActDriv).png, id=66, 469.755pt x 300.3722pt>
+<Hist(PropActDriv).png, id=69, 469.755pt x 300.3722pt>
 File: Hist(PropActDriv).png Graphic file (type png)
 <use Hist(PropActDriv).png>
-Package pdftex.def Info: Hist(PropActDriv).png  used on input line 229.
+Package pdftex.def Info: Hist(PropActDriv).png  used on input line 256.
 (pdftex.def)             Requested size: 469.75386pt x 300.37144pt.
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 234.
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [8 </home/parth/Work/School/Computers/ECS132/finalproject/Hist(PropActDriv).png>] [9] [10] [11] (/home/parth/Work/School/Computers/ECS132/finalproject/TermProject.R [12] [13] [14] [15] [16])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 468.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 468.
- (/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 468.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 468.
-Package rerunfilecheck Info: File `ProjectReport.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 468.
- ) 
-Here is how much of TeX's memory you used:
- 9674 strings out of 482854
- 139828 string characters out of 5956882
- 772501 words of memory out of 5000000
- 24512 multiletter control sequences out of 15000+600000
- 542740 words of font info for 56 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 43i,7n,40p,862b,1983s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1000.600pk> </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.pdf (17 pages, 429152 bytes).
-PDF statistics:
- 550 PDF objects out of 1000 (max. 8388607)
- 495 compressed objects within 5 object streams
- 330 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+[8 </home/parth/Work/School/Computers/ECS132/finalproject/Hist(PropActDriv).png>]
+!pdfTeX error: pdflatex (file /home/parth/Work/School/Computers/ECS132/finalproject/hist_p2_m2.png): libpng: internal error
+ ==> Fatal error occurred, no output PDF file produced!
