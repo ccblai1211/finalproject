@@ -52,6 +52,7 @@ Parth Shah
 \vspace{1cm}  
 \end{center}
 \subfile{parth.tex}
+\newpage
 
 \begin{center}
 {\LARGE\bfseries Middle Cerebellar Peduncle Width - A Novel MRI Biomarker for FXTAS?}
@@ -60,6 +61,7 @@ Claire Wong
 \vspace{1cm}  
 \end{center}
 \subfile{claire.tex}
+\newpage
 
 \begin{center}
 {\LARGE\bfseries Pair-Bonded Relationships and
@@ -71,12 +73,23 @@ Simerpal Whala
 \vspace{1cm}  
 \end{center}
 \subfile{SimerpalPartA.tex}
+\newpage
+
+\begin{center}
+{\LARGE\bfseries Novel Inferences in a Multidimensional Social Network
+Use a Grid-like Code}
+
+Brian Lai
+\vspace{1cm}  
+\end{center}
+\subfile{brian_a.tex}
+\newpage
 
 \section*{{\LARGE\bfseries Problem B}}
 
 \noindent{\textbf{\LARGE{Introduction}}}\\ 
 
-\noindent{\textbf{\large{Database \(train.csv\)}}}\\
+\noindent{\textbf{\large{Database \(train.csv\)}}}\\ 
 
 \par
 	In section B of the term project, we were given a data set of Porto taxi trips \(train.csv\).
@@ -143,7 +156,10 @@ Now we have a column called trip duration, so we use hist to plot the trip durat
  the gamma distribution seems to only exist in [1,100] because the probability that the trip time is under a minute
  is too high to fit into the gamma distribution.
 
-\includegraphics[scale = .5]{hist_p1_1.png}\\
+\begin{figure} \centering
+    \includegraphics[scale = .5]{hist_p1_1.png}
+    \caption{\textit{trip histogram gamma distribution curve}}
+\end{figure}
 
 
 \noindent{\textbf{\large{Verify the hypothesis:}}}\\
@@ -258,7 +274,8 @@ Plotting B into the histogram, we get an approximate normal distribution in the 
 Applying another method using the frequency of trips, We have a distribution like a gamma distribution in the
  range[0.1, 0.8], but there are many extreme cases between (0, 0.1). The mean is 0.253 with a variance of 0.768.
 
-\noindent\includegraphics{hist_p2_m2.png}\\
+\noindent\includegraphics[scale=.5]{hist_p2_m2.png}\\
+\newpage
 
 \noindent\textbf{Verify the hypophysis:}\\
 \par
@@ -266,7 +283,7 @@ To test the first method's accuracy, we apply the pdf for normal distribution wi
 0.0877, 0.00118, and 0.0344, and the curve fits passably. We further compare the empirical cdf and cdf of the normal distribution,
 and it turns out to be accurate with the small difference between them. \\
 
-\noindent\includegraphics{Busy_time_cdf.png}\\
+\noindent\includegraphics[scale = .70]{Busy_time_cdf.png}\\
 \par
 On the other hand, when we apply the gamma family distribution with r  the curve does not show up. The reason is the large value of variance
 in the data. As we can see, many data points have over 100% busy time, and we think it’s legal since a driver can possibly have more than one
@@ -280,12 +297,12 @@ which misleads the result because no one really works that much. We decide to mu
 work 8 hours per day; even though it’s inappropriate to say the average working time is 8 hours without evidence, that raises the readability
 and realisticity.
 
-\noindent\includegraphics{8_hour_busy_time.png}\\
+\noindent\includegraphics[scale = .70]{8_hour_busy_time.png}\\
 \par
 After setting the operating hours to 8, we still have a normal distribution. We also apply both empirical cdf and cdf of the normal distribution,
 and the result is acceptable with less compatibility than the original distribution. However, readability is the key to this improvement.\\
 
-\noindent\includegraphics{8_hour_busy_time_cdf.png}\\
+\noindent\includegraphics[scale = .70]{8_hour_busy_time_cdf.png}\\
 
 \noindent\textbf{Analysis:}\\
 \par
@@ -298,7 +315,7 @@ such as lowering the effort of drivers who take a vacation.
 	trips. If a driver just finishes a trip with a duration of 10 minutes, he is likely to get his next guest in 7.2 minutes. The extreme cases in the
 	range (0,0.01) represent the trips having the interval over a day or days, meaning they get off work.
 
-
+\newpage
 
 \noindent{\textbf{\LARGE{Investigation of average trip times using CALLTYPE:}}}
 % \centering\noindent\includegraphics{Part3(Code).png}\\
@@ -514,13 +531,21 @@ In the prediction part of modeling we decided we will be predicting the time dur
 \par
 We found that this gave us really good results up to an extent with the density curves somewhat going along the actual values.
 
+\noindent\includegraphics[scale = .40]{dist_pred.png}\\
+
 \textbf{Predict Time Duration using Speed and time of the day only}
 \par
 We found that this results in a really bad prediction since the speed and time of day alone cannot really predict the duration of the trip. We can see in the density graphs that this no way resembles the actual data.
 
+\noindent\includegraphics[scale = .45]{speed_pred.png}\\
+
 \textbf{Predict Time Duration using Distance, Speed, Time, and Type of Call}
 \par
 This gave us the most accurate results with the KNN model almost exactly coinciding with the actual data. We deciphered that giving the model more parameters to train on, the model can correlate more values and thus can give us better predictions.
+
+\noindent\includegraphics[scale = .40]{all_pred.png}\\
+
+\newpage
 
 \noindent{\textbf{\LARGE{Confidence Interval for Linear model}}}\\
 \par
@@ -536,6 +561,8 @@ se = sqrt(sum((actual - prediction) ^ 2) / n)
 \end{lstlisting}
 Now that we have both, the z and se, we can find the intervals as $T \pm q_{\alpha/2} s.e.(T)$
 
+
+
 \textbf{Contributions}
 \begin{itemize}
 	\item Parth: \begin{itemize}
@@ -548,7 +575,11 @@ Now that we have both, the z and se, we can find the intervals as $T \pm q_{\alp
 		\item Helped compile the final Latex Document.
 	\end{itemize}
 	\item Simerpal: \begin{itemize}
-		\item
+		\item Worked on Modeling Trip Duration
+		\item Analyzed mean trip times to in relation to Call Types
+		\item Worked on writing the latex document
+		\item Helped troubleshoot issues and find solutions
+		\item Helped create gaphics and models
 	\end{itemize}
 	\item Claire: \begin{itemize}
 		\item Worked on finding the distribution curve for the trip duration and finding a model 
@@ -559,9 +590,15 @@ Now that we have both, the z and se, we can find the intervals as $T \pm q_{\alp
 		\item Worked on determining confidence intervals of the linear models
 	\end{itemize}
 	\item Brian:\begin{itemize}
-		\item Worked on
+		\item Optimized the compatibility of the probability density of data and hypothetical distribution
+		\item Analyzed the result of the data density distribution
+		\item Worked on Composing the report
+		\item Worked on Composing the Latex file
+		\item Helped sloving the problems we encountered
+		
 	\end{itemize}
 \end{itemize}
+\newpage
 
 \appendix
 \section*{Appendix}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.2)  18 MAR 2021 08:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.2)  18 MAR 2021 08:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -364,145 +364,155 @@ LaTeX Info: Redefining \nameref on input line 42.
 Package ragged2e Info: ABD: executing \RaggedRight on input line 42.
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 42.
- (/home/parth/Work/School/Computers/ECS132/finalproject/parth.tex) (/home/parth/Work/School/Computers/ECS132/finalproject/claire.tex [1
+ (/home/parth/Work/School/Computers/ECS132/finalproject/parth.tex) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (/home/parth/Work/School/Computers/ECS132/finalproject/claire.tex
 Overfull \hbox (9.97719pt too wide) in paragraph at lines 9--19
 []\OT1/cmr/m/n/10.95 This pa-per an-a-lyzed the util-ity of the Mag-netic Res-o-nance Parkin-son In-dex (MRPI) as a biomarker 
  []
 
-) (/home/parth/Work/School/Computers/ECS132/finalproject/SimerpalPartA.tex
-Overfull \hbox (339.80075pt too wide) in paragraph at lines 12--13
- []\OT1/cmr/m/n/10.95 https://static1.squarespace.com/static/504114b1e4b0b97fe5a520af/t/56f84581f850827e6f46c442/1459111298221/DuranteEastwickFinkelGangestadSimpson2016AESP.pdf[] 
- []
-
-
+) [2] (/home/parth/Work/School/Computers/ECS132/finalproject/SimerpalPartA.tex
 Overfull \hbox (7.60466pt too wide) in paragraph at lines 18--19
 \OT1/cmr/m/n/10.95 ovu-la-tory shifts in a woman and the ef-fect this has on a re-la-tion-ship. The ar-ti-cle in-di-cated whether 
  []
 
-[2]) [3]
-<hist_p1_1.png, id=30, 767.86874pt x 558.58687pt>
+) [3] (/home/parth/Work/School/Computers/ECS132/finalproject/brian_a.tex
+Overfull \hbox (2.03839pt too wide) in paragraph at lines 25--32
+\OT1/cmr/m/n/10.95 cor-rect-ness of de-ci-sion peo-ple have rel-a-tive mem-ory with peo-ple do not have fa-mil-iar-ity and found 
+ []
+
+) [4] [5]
+<hist_p1_1.png, id=39, 767.86874pt x 558.58687pt>
 File: hist_p1_1.png Graphic file (type png)
 <use hist_p1_1.png>
-Package pdftex.def Info: hist_p1_1.png  used on input line 146.
+Package pdftex.def Info: hist_p1_1.png  used on input line 160.
 (pdftex.def)             Requested size: 383.93343pt x 279.29276pt.
- [4 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_1.png>]
-<cdf_p1_1.png, id=40, 779.16093pt x 581.17125pt>
+<cdf_p1_1.png, id=41, 779.16093pt x 581.17125pt>
 File: cdf_p1_1.png Graphic file (type png)
 <use cdf_p1_1.png>
-Package pdftex.def Info: cdf_p1_1.png  used on input line 158.
+Package pdftex.def Info: cdf_p1_1.png  used on input line 174.
 (pdftex.def)             Requested size: 389.57951pt x 290.58492pt.
-<hist_p1_2.png, id=41, 774.64406pt x 581.92406pt>
+ [6 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_1.png>]
+<hist_p1_2.png, id=52, 774.64406pt x 581.92406pt>
 File: hist_p1_2.png Graphic file (type png)
 <use hist_p1_2.png>
-Package pdftex.def Info: hist_p1_2.png  used on input line 171.
+Package pdftex.def Info: hist_p1_2.png  used on input line 187.
 (pdftex.def)             Requested size: 232.395pt x 174.57855pt.
-<cdf_p1_2.png, id=42, 787.44188pt x 580.41844pt>
+<cdf_p1_2.png, id=53, 787.44188pt x 580.41844pt>
 File: cdf_p1_2.png Graphic file (type png)
 <use cdf_p1_2.png>
-Package pdftex.def Info: cdf_p1_2.png  used on input line 172.
+Package pdftex.def Info: cdf_p1_2.png  used on input line 188.
 (pdftex.def)             Requested size: 236.23438pt x 174.12688pt.
 
-Overfull \hbox (2.52438pt too wide) in paragraph at lines 171--172
+Overfull \hbox (2.52438pt too wide) in paragraph at lines 187--188
 [][] []  
  []
 
-[5 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_1.png> </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_2.png> </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_2.png>]
-<hist_p1_3.png, id=50, 779.91376pt x 568.37344pt>
+[7 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_1.png> </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_2.png> </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_2.png>]
+<hist_p1_3.png, id=62, 779.91376pt x 568.37344pt>
 File: hist_p1_3.png Graphic file (type png)
 <use hist_p1_3.png>
-Package pdftex.def Info: hist_p1_3.png  used on input line 188.
+Package pdftex.def Info: hist_p1_3.png  used on input line 204.
 (pdftex.def)             Requested size: 389.95593pt x 284.18602pt.
-<cdf_p1_3.png, id=51, 788.9475pt x 579.66562pt>
+<cdf_p1_3.png, id=63, 788.9475pt x 579.66562pt>
 File: cdf_p1_3.png Graphic file (type png)
 <use cdf_p1_3.png>
-Package pdftex.def Info: cdf_p1_3.png  used on input line 189.
+Package pdftex.def Info: cdf_p1_3.png  used on input line 205.
 (pdftex.def)             Requested size: 394.47278pt x 289.83209pt.
- [6 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_3.png>] [7 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_3.png>]
-Overfull \hbox (1.67345pt too wide) in paragraph at lines 254--255
+ [8 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p1_3.png>] [9 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_3.png>]
+Overfull \hbox (1.67345pt too wide) in paragraph at lines 270--271
 []\OT1/cmr/m/n/10.95 Plotting B into the his-togram, we get an ap-prox-i-mate nor-mal dis-tri-bu-tion in the range of (0,0.23]. 
  []
 
-<Hist(PropActDriv).png, id=69, 469.755pt x 300.3722pt>
+<Hist(PropActDriv).png, id=80, 469.755pt x 300.3722pt>
 File: Hist(PropActDriv).png Graphic file (type png)
 <use Hist(PropActDriv).png>
-Package pdftex.def Info: Hist(PropActDriv).png  used on input line 256.
+Package pdftex.def Info: Hist(PropActDriv).png  used on input line 272.
 (pdftex.def)             Requested size: 469.75386pt x 300.37144pt.
-[8 </home/parth/Work/School/Computers/ECS132/finalproject/Hist(PropActDriv).png>]
-<hist_p2_m2.png, id=77, 674.52pt x 670.505pt>
+[10 </home/parth/Work/School/Computers/ECS132/finalproject/Hist(PropActDriv).png>]
+<hist_p2_m2.png, id=88, 674.52pt x 670.505pt>
 File: hist_p2_m2.png Graphic file (type png)
 <use hist_p2_m2.png>
-Package pdftex.def Info: hist_p2_m2.png  used on input line 261.
-(pdftex.def)             Requested size: 674.51836pt x 670.50337pt.
-
-Overfull \hbox (204.76337pt too wide) in paragraph at lines 261--261
-[]  
- []
-
-[9]
-Overfull \vbox (2.00587pt too high) has occurred while \output is active []
-
- [10 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p2_m2.png (PNG copy)>]
-<Busy_time_cdf.png, id=86, 563.10374pt x 378.66469pt>
+Package pdftex.def Info: hist_p2_m2.png  used on input line 277.
+(pdftex.def)             Requested size: 337.25917pt x 335.25168pt.
+ [11 </home/parth/Work/School/Computers/ECS132/finalproject/hist_p2_m2.png (PNG copy)>]
+<Busy_time_cdf.png, id=93, 563.10374pt x 378.66469pt>
 File: Busy_time_cdf.png Graphic file (type png)
 <use Busy_time_cdf.png>
-Package pdftex.def Info: Busy_time_cdf.png  used on input line 269.
-(pdftex.def)             Requested size: 563.10237pt x 378.66376pt.
-
-Overfull \hbox (93.34738pt too wide) in paragraph at lines 269--269
-[]  
- []
-
-<8_hour_busy_time.png, id=87, 563.10374pt x 378.66469pt>
+Package pdftex.def Info: Busy_time_cdf.png  used on input line 286.
+(pdftex.def)             Requested size: 394.16994pt x 265.06346pt.
+<8_hour_busy_time.png, id=94, 563.10374pt x 378.66469pt>
 File: 8_hour_busy_time.png Graphic file (type png)
 <use 8_hour_busy_time.png>
-Package pdftex.def Info: 8_hour_busy_time.png  used on input line 283.
-(pdftex.def)             Requested size: 563.10237pt x 378.66376pt.
-
-Overfull \hbox (93.34738pt too wide) in paragraph at lines 283--283
-[]  
- []
-
-[11 </home/parth/Work/School/Computers/ECS132/finalproject/Busy_time_cdf.png>]
-<8_hour_busy_time_cdf.png, id=93, 563.10374pt x 378.66469pt>
+Package pdftex.def Info: 8_hour_busy_time.png  used on input line 300.
+(pdftex.def)             Requested size: 394.16994pt x 265.06346pt.
+ [12 </home/parth/Work/School/Computers/ECS132/finalproject/Busy_time_cdf.png>]
+<8_hour_busy_time_cdf.png, id=100, 563.10374pt x 378.66469pt>
 File: 8_hour_busy_time_cdf.png Graphic file (type png)
 <use 8_hour_busy_time_cdf.png>
-Package pdftex.def Info: 8_hour_busy_time_cdf.png  used on input line 288.
-(pdftex.def)             Requested size: 563.10237pt x 378.66376pt.
+Package pdftex.def Info: 8_hour_busy_time_cdf.png  used on input line 305.
+(pdftex.def)             Requested size: 394.16994pt x 265.06346pt.
+ [13 </home/parth/Work/School/Computers/ECS132/finalproject/8_hour_busy_time.png> </home/parth/Work/School/Computers/ECS132/finalproject/8_hour_busy_time_cdf.png>] [14]
+LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 323.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
+File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) [15] [16] [17]
+<dist_pred.png, id=159, 1264.725pt x 741.77126pt>
+File: dist_pred.png Graphic file (type png)
+<use dist_pred.png>
+Package pdftex.def Info: dist_pred.png  used on input line 534.
+(pdftex.def)             Requested size: 505.88104pt x 296.70325pt.
 
-Overfull \hbox (93.34738pt too wide) in paragraph at lines 288--288
+Overfull \hbox (36.12605pt too wide) in paragraph at lines 534--534
 []  
  []
 
-[12 </home/parth/Work/School/Computers/ECS132/finalproject/8_hour_busy_time.png>]
-LaTeX Font Info:    Trying to load font information for TS1+cmtt on input line 306.
- (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmtt.fd
-File: ts1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [13 </home/parth/Work/School/Computers/ECS132/finalproject/8_hour_busy_time_cdf.png>] [14] [15] [16] [17] (/home/parth/Work/School/Computers/ECS132/finalproject/TermProject.R [18] [19] [20] [21] [22])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 569.
- [23]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 569.
+[18]
+<speed_pred.png, id=172, 1049.9225pt x 632.3625pt>
+File: speed_pred.png Graphic file (type png)
+<use speed_pred.png>
+Package pdftex.def Info: speed_pred.png  used on input line 540.
+(pdftex.def)             Requested size: 472.46075pt x 284.5605pt.
+
+Overfull \hbox (2.70576pt too wide) in paragraph at lines 540--540
+[]  
+ []
+
+[19 </home/parth/Work/School/Computers/ECS132/finalproject/dist_pred.png (PNG copy)> </home/parth/Work/School/Computers/ECS132/finalproject/speed_pred.png (PNG copy)>]
+<all_pred.png, id=178, 1176.395pt x 654.445pt>
+File: all_pred.png Graphic file (type png)
+<use all_pred.png>
+Package pdftex.def Info: all_pred.png  used on input line 546.
+(pdftex.def)             Requested size: 470.54967pt x 261.77336pt.
+
+Overfull \hbox (0.79468pt too wide) in paragraph at lines 546--546
+[]  
+ []
+
+[20 </home/parth/Work/School/Computers/ECS132/finalproject/all_pred.png (PNG copy)>] [21] [22] (/home/parth/Work/School/Computers/ECS132/finalproject/TermProject.R [23] [24] [25] [26] [27])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 606.
+ [28]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 606.
  (/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 569.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 569.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 606.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 606.
 Package rerunfilecheck Info: File `ProjectReport.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 569.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 606.
  ) 
 Here is how much of TeX's memory you used:
- 9706 strings out of 482854
- 140425 string characters out of 5956882
- 770501 words of memory out of 5000000
- 24532 multiletter control sequences out of 15000+600000
- 542740 words of font info for 56 fonts, out of 8000000 for 9000
+ 9748 strings out of 482854
+ 141118 string characters out of 5956882
+ 823501 words of memory out of 5000000
+ 24550 multiletter control sequences out of 15000+600000
+ 543086 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 43i,7n,40p,862b,2507s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1000.600pk> </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on /home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.pdf (23 pages, 479880 bytes).
+ 43i,7n,40p,862b,1983s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1000.600pk> </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on /home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.pdf (28 pages, 862588 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 518 compressed objects within 6 object streams
- 338 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 631 PDF objects out of 1000 (max. 8388607)
+ 553 compressed objects within 6 object streams
+ 355 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

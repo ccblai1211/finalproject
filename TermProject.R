@@ -4,6 +4,7 @@ library('rjson');
 
 "/" <- function(x, y) ifelse(y == 0, 0, base:::"/"(x, y))
 
+#Reads the data
 readData <- function() {
   allData <- read.csv("train.csv", colClasses = c("TRIP_ID" = "character"))
 
@@ -12,10 +13,12 @@ readData <- function() {
   return(allData)
 }
 
+#Get the amount of time a trip takes by counting the number of coordinates in Polyline and multiplying by 15
 getDur <- function(row) {
   return(length(fromJSON(row[[9]])) * 15 / 60);
 }
 
+#
 spl <- function(l) {
   df <- data.frame(l)
   l <- list()
@@ -34,6 +37,7 @@ spl <- function(l) {
   return(list(d, l))
 }
 
+#Calculate the distance
 HaversineDistance <- function(lat1, lon1, lat2, lon2) {
   # returns the distance in m
   REarth <- 6371000
@@ -156,6 +160,7 @@ partAB <- function() {
   r1 <- m1 / v1
   s1 <- m1 * m1 / v1
 
+  #plots histogram curve and estimated gamma curves
   h1 <- hist(d, freq = FALSE, breaks = 200, xlim = c(0, 200))
   curve(dgamma(x, s1, r1), 0, max(d), add = TRUE, col = "red")
   curve(dgamma(x, 4, 0.4), 0, max(d), add = TRUE, col = "red")
@@ -167,6 +172,7 @@ partAB <- function() {
   r2 <- m2 / v2
   s2 <- m2 * m2 / v2
 
+  #plots histogram graph and estimated gamma curves
   h2 <- hist(p, freq = FALSE, breaks = 20000, xlim = c(0, 1))
   print(h2)
   curve(dgamma(x, s2, 1 / r2), 0, max(p), add = TRUE, col = "red")
@@ -190,7 +196,8 @@ partC <- function() {
   print(paste0('C: mean: ', mean(res[[3]]), 'var: ', var(res[[3]])))
 }
 
-drawPlot <- function(m1, m2) {
+drawPlot <- function(m1,m2) {
+  #machine learning predictions
   lin1 <- qeLin(m1, yName = "dur")
   lin2 <- qeLin(m2, yName = "dur")
   poly1 <- qePolyLin(m1, yName = "dur")
@@ -220,15 +227,20 @@ drawPlot <- function(m1, m2) {
 
   plot(m1$dist, m1$dur, xlim = c(0, 10 ^ 5))
   points(m1$dist, pre1, col = "red", cex = 0.1)
+  points(m1$dist, pre2, col = "green", cex = 0.1)
+  points(m1$dist, pre3, col = "cyan", cex = 0.1)
   points(m1$dist, pre4, col = "purple", cex = 0.1)
-
+  points(m1$dist, pre5, col = "orange", cex = 0.1)
+  points(m1$dist, pre6, col = "yellow", cex = 0.1)
 }
 
 partD <- function() {
   date_ref <- trainData
+  #Convert Unix Timestamp to regular timestamp and extract date, hour, min, sec
   date_ref <- subset(date_ref, select = c(TIMESTAMP))
   test = as.POSIXct(date_ref$TIMESTAMP, origin = "1970-01-01")
   date_ref$DATE <- format(test, format = "%Y-%m-%d")
+  #Convert m-d-y to day of year
   date_ref$DAY_OF_YEAR <- as.integer(format(test, format = '%j'))
   date_ref$HOUR <- as.integer(format(test, format = "%H"))
   date_ref$MIN <- as.integer(format(test, format = "%M"))
@@ -237,7 +249,7 @@ partD <- function() {
 
   distance <- apply(trainData, 1, get_dist)
   duration <- apply(trainData, 1, getDur)
-  speed <- dist / dur
+  speed <- distance / duration
   call <- apply(trainData, 1, function(row) {
     return(as.integer(charToRaw(row[[2]])) - 64)
   })
@@ -254,7 +266,6 @@ partD <- function() {
 
 trainData <- readData()
 
-# partAB()
-# partC()
-# partD()
-c
+partAB()
+partC()
+partD()
