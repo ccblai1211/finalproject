@@ -11,9 +11,19 @@
 \setlength{\parindent}{4em}
 \setlength{\parskip}{2mm}
 \usepackage{listings}
+\usepackage[svgnames]{xcolor}
+\usepackage{color}
 
-\lstset{frame=tb,
-  language=R,}
+  \lstset{language=R,
+    basicstyle=\small\ttfamily,
+    stringstyle=\color{DarkGreen},
+    otherkeywords={0,1,2,3,4,5,6,7,8,9},
+    morekeywords={TRUE,FALSE},
+    deletekeywords={data,frame,length,as,character},
+    keywordstyle=\color{blue},
+    commentstyle=\color{DarkGreen},
+}
+
 \begin{document}
 
 \noindent{\textbf{\LARGE{Introduction}}}\\ \\
@@ -331,6 +341,14 @@ Since we were talking about call types affecting the duration, we decided to use
 call <- apply(trainData, 1, function(row) {
 	return(as.integer(charToRaw(row[[2]]))-64)
 })
-	
 \end{lstlisting}
+
+\noindent{\textbf{\LARGE{Predictions and Parameters}}}\\
+\par
+In the prediction part of modeling we decided we will be predicting the time duration of a trip depending on multiple factors. The 3 different sets of parameters we decided to use:
+\begin{itemize}
+	\item Predict Time Duration using Distance only
+	\item Predict Time Duration using Speed and time of the day only
+	\item Predict Time Duration using Distance, Speed, Time, and Type of Call
+\end{itemize}
 \end{document}
