@@ -10,7 +10,10 @@
 \setlength{\textheight}{9.25in}
 \setlength{\parindent}{4em}
 \setlength{\parskip}{2mm}
+\usepackage{listings}
 
+\lstset{frame=tb,
+  language=R,}
 \begin{document}
 
 \noindent{\textbf{\LARGE{Introduction}}}\\ \\
@@ -263,7 +266,7 @@ In the term project we decided to use the following models to visualize our data
 	\item Boosting
 \end{itemize}
 
-\textbf{Gathering the parameters:}
+\textbf{Moddling Distance and Speed:}
 \par
 The first model we decided to take on was modeling the distance vs the 
 speed. In order to plot these two variables on a model we had to obtain 
@@ -276,8 +279,58 @@ of computing distances between two points on the surface of a sphere using
 the latitude and longitude of the two points.
 \begin{equation*}
 	\begin{aligned}
-		(x1,y1) = Starting Coordinates\\
-		(x1,y1) =Ending Coordinates
+		(x1,y1) &&= Starting Coordinates\\
+		(x1,y1) &&=Ending Coordinates
 	\end{aligned}
 \end{equation*}
+
+\par
+In order to figure out the average speed we now have distance and can obtain time elapsed during a trip by figuring out trip duration. In order to figure out trip duration we took the length of the POLYLINE variable where each length represents 15 seconds. So, we used the following formula:
+
+\begin{equation*}
+	Speed = \frac{Distance} {Length(POLYLINE) * 15 / 60}
+\end{equation*}
+
+\textbf{Moddling Time:}
+\par
+Looking for other parameters, we decided to check if using the day of the year and time of the day affect the accuracy of the predictions. In order to get this data, we use the timestamp and convert it to a DayTime using
+
+\begin{lstlisting}
+as.POSIXct(date_ref$TIMESTAMP, origin = "1970-01-01")
+\end{lstlisting}
+\par
+Next, we extract the Date, Day of the year, hour, minute and second from that
+\begin{lstlisting}
+date_ref$DATE <- format(test, format = "%Y-%m-%d")
+date_ref$DAY_OF_YEAR <- as.integer(format(test, format = '%j'))
+date_ref$HOUR <- as.integer(format(test, format = "%H"))
+date_ref$MIN <- as.integer(format(test, format = "%M"))
+date_ref$SEC <- as.integer(format(test, format = "%S"))
+\end{lstlisting}
+
+\par
+Now that we have the essential data, we can create 2 variable to use for our predictions, 
+\begin{lstlisting}
+time <- (date_ref$HOUR * 60 + date_ref$MIN + date_ref$SEC / 60)
+dyear <- data.frame(date_ref$DAY_OF_YEAR + time / 24)  
+\end{lstlisting}
+
+\par
+In short, the time of day was calculated by extracting the hour, minute, and second (eg. 00:00:00) from the Unix timestamp in the TIMESTAMP column of the dataset. Then, the hour was added to the minutes/60 plus the seconds /3600. Divisions were done to convert the time into hour.
+
+\par
+Thus, in a 24 hour day, 0 is midnight and 23.99 is right before midnight of the same day. For the time of day predictions, no distinctions were made on the day of the year, only the time of day. 
+\par
+For the day of the year, the date (eg 01/01/2013) was extracted from the Unix timestamp and was converted into the day of the year, where 01/01/2013 is day 1 and 12/31/2013 is day 365. 
+
+\textbf{Moddling Call Type:}
+\par
+Since we were talking about call types affecting the duration, we decided to use them in order to increase the prediction accuracy. Since there can be only A,B or C type, we can convert them to 1,2 or 3 so that we can directly feed it to the model.
+
+\begin{lstlisting}
+call <- apply(trainData, 1, function(row) {
+	return(as.integer(charToRaw(row[[2]]))-64)
+})
+	
+\end{lstlisting}
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.2)  18 MAR 2021 05:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2021.1.2)  18 MAR 2021 05:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -94,114 +94,144 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen144
 \Gin@req@width=\dimen145
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count188
+\lst@gtempboxa=\box47
+\lst@token=\toks21
+\lst@length=\count189
+\lst@currlwidth=\dimen146
+\lst@column=\count190
+\lst@pos=\count191
+\lst@lostspace=\dimen147
+\lst@width=\dimen148
+\lst@newlines=\count192
+\lst@lineno=\count193
+\lst@maxwidth=\dimen149
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count194
+\lst@skipnumbers=\count195
+\lst@framebox=\box48
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2020/03/24 1.8d listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-06-29 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count188
-\l__pdf_internal_box=\box47
+\l__kernel_color_stack_int=\count196
+\l__pdf_internal_box=\box49
 ) (/home/parth/Work/School/Computers/ECS132/finalproject/final.aux)
 \openout1 = `final.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count189
-\scratchdimen=\dimen146
-\scratchbox=\box48
-\nofMPsegments=\count190
-\nofMParguments=\count191
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count192
-\MPscratchDim=\dimen147
-\MPnumerator=\count193
-\makeMPintoPDFobject=\count194
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count197
+\scratchdimen=\dimen150
+\scratchbox=\box50
+\nofMPsegments=\count198
+\nofMParguments=\count199
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count266
+\MPscratchDim=\dimen151
+\MPnumerator=\count267
+\makeMPintoPDFobject=\count268
+\everyMPtoPDFconversion=\toks23
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+\c@lstlisting=\count269
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 16--18
+Underfull \hbox (badness 10000) in paragraph at lines 19--21
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--34
+Underfull \hbox (badness 10000) in paragraph at lines 23--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 35--36
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--43
+Underfull \hbox (badness 10000) in paragraph at lines 40--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+Underfull \hbox (badness 10000) in paragraph at lines 55--56
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 63--65
+Underfull \hbox (badness 10000) in paragraph at lines 66--68
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 73--74
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--76
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
 
  []
 
 <hist_p1_1.png, id=12, 767.86874pt x 558.58687pt>
 File: hist_p1_1.png Graphic file (type png)
 <use hist_p1_1.png>
-Package pdftex.def Info: hist_p1_1.png  used on input line 84.
+Package pdftex.def Info: hist_p1_1.png  used on input line 87.
 (pdftex.def)             Requested size: 383.93343pt x 279.29276pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 84--85
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
@@ -209,60 +239,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 87--88
 <cdf_p1_1.png, id=20, 779.16093pt x 581.17125pt>
 File: cdf_p1_1.png Graphic file (type png)
 <use cdf_p1_1.png>
-Package pdftex.def Info: cdf_p1_1.png  used on input line 96.
+Package pdftex.def Info: cdf_p1_1.png  used on input line 99.
 (pdftex.def)             Requested size: 389.57951pt x 290.58492pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--101
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 102--103
+Underfull \hbox (badness 10000) in paragraph at lines 105--106
 
  []
 
 <hist_p1_2.png, id=21, 774.64406pt x 581.92406pt>
 File: hist_p1_2.png Graphic file (type png)
 <use hist_p1_2.png>
-Package pdftex.def Info: hist_p1_2.png  used on input line 109.
+Package pdftex.def Info: hist_p1_2.png  used on input line 112.
 (pdftex.def)             Requested size: 232.395pt x 174.57855pt.
 <cdf_p1_2.png, id=22, 787.44188pt x 580.41844pt>
 File: cdf_p1_2.png Graphic file (type png)
 <use cdf_p1_2.png>
-Package pdftex.def Info: cdf_p1_2.png  used on input line 110.
+Package pdftex.def Info: cdf_p1_2.png  used on input line 113.
 (pdftex.def)             Requested size: 236.23438pt x 174.12688pt.
 
-Overfull \hbox (1.30772pt too wide) in paragraph at lines 104--111
+Overfull \hbox (1.30772pt too wide) in paragraph at lines 107--114
 [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--111
+Underfull \hbox (badness 10000) in paragraph at lines 107--114
 
  []
 
 [3 </home/parth/Work/School/Computers/ECS132/finalproject/cdf_p1_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 113--114
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--125
+Underfull \hbox (badness 10000) in paragraph at lines 118--128
 
  []
 
 <hist_p1_3.png, id=27, 779.91376pt x 568.37344pt>
 File: hist_p1_3.png Graphic file (type png)
 <use hist_p1_3.png>
-Package pdftex.def Info: hist_p1_3.png  used on input line 126.
+Package pdftex.def Info: hist_p1_3.png  used on input line 129.
 (pdftex.def)             Requested size: 389.95593pt x 284.18602pt.
 <cdf_p1_3.png, id=28, 788.9475pt x 579.66562pt>
 File: cdf_p1_3.png Graphic file (type png)
 <use cdf_p1_3.png>
-Package pdftex.def Info: cdf_p1_3.png  used on input line 127.
+Package pdftex.def Info: cdf_p1_3.png  used on input line 130.
 (pdftex.def)             Requested size: 394.47278pt x 289.83209pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--128
+Underfull \hbox (badness 10000) in paragraph at lines 129--131
 
  []
 
@@ -270,10 +300,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 126--128
 <Hist(PropActDriv).png, id=39, 469.755pt x 300.3722pt>
 File: Hist(PropActDriv).png Graphic file (type png)
 <use Hist(PropActDriv).png>
-Package pdftex.def Info: Hist(PropActDriv).png  used on input line 167.
+Package pdftex.def Info: Hist(PropActDriv).png  used on input line 170.
 (pdftex.def)             Requested size: 469.75386pt x 300.37144pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
@@ -281,22 +311,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 167--168
 <Part3(Code).png, id=47, 310.15875pt x 161.10187pt>
 File: Part3(Code).png Graphic file (type png)
 <use Part3(Code).png>
-Package pdftex.def Info: Part3(Code).png  used on input line 170.
+Package pdftex.def Info: Part3(Code).png  used on input line 173.
 (pdftex.def)             Requested size: 310.15799pt x 161.10147pt.
- [7 </home/parth/Work/School/Computers/ECS132/finalproject/Hist(PropActDriv).png> </home/parth/Work/School/Computers/ECS132/finalproject/Part3(Code).png>] [8] [9] (/home/parth/Work/School/Computers/ECS132/finalproject/final.aux) ) 
+ [7 </home/parth/Work/School/Computers/ECS132/finalproject/Hist(PropActDriv).png> </home/parth/Work/School/Computers/ECS132/finalproject/Part3(Code).png>] [8]
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 304.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10.95> not available
+(Font)              Font shape `OML/cmm/b/it' tried instead on input line 304.
+ [9]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 331.
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 331.
+ [10] (/home/parth/Work/School/Computers/ECS132/finalproject/final.aux) ) 
 Here is how much of TeX's memory you used:
- 1836 strings out of 482854
- 25386 string characters out of 5956882
- 263543 words of memory out of 5000000
- 17190 multiletter control sequences out of 15000+600000
- 541202 words of font info for 50 fonts, out of 8000000 for 9000
+ 4218 strings out of 482854
+ 55245 string characters out of 5956882
+ 480969 words of memory out of 5000000
+ 19542 multiletter control sequences out of 15000+600000
+ 541905 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 36i,5n,33p,680b,161s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on /home/parth/Work/School/Computers/ECS132/finalproject/final.pdf (9 pages, 354651 bytes).
+ 36i,7n,40p,680b,1747s stack positions out of 5000i,500n,10000p,200000b,80000s
+ </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcbx1095.600pk> </home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on /home/parth/Work/School/Computers/ECS132/finalproject/final.pdf (10 pages, 368284 bytes).
 PDF statistics:
- 100 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 115 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
