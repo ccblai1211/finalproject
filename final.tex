@@ -22,6 +22,8 @@
     deletekeywords={data,frame,length,as,character},
     keywordstyle=\color{blue},
     commentstyle=\color{DarkGreen},
+	breaklines=true,
+  	showstringspaces=false,
 }
 
 \begin{document}
@@ -403,4 +405,7 @@ se = sqrt(sum((actual - prediction) ^ 2) / n)
 \end{lstlisting}
 Now that we have both, the z and se, we can find the intervals as $T \pm q_{\alpha/2} s.e.(T)$
 
+\appendix
+\section*{Code}
+\lstinputlisting[language=R]{TermProject.R}
 \end{document}
