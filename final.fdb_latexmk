@@ -1,10 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1616028802 "/home/parth/Work/School/Computers/ECS132/finalproject/final.tex" "/home/parth/Work/School/Computers/ECS132/finalproject/final.pdf" "final" 1616028803
+["pdflatex"] 1616028965 "/home/parth/Work/School/Computers/ECS132/finalproject/final.tex" "/home/parth/Work/School/Computers/ECS132/finalproject/final.pdf" "final" 1616028966
   "/etc/texmf/web2c/texmf.cnf" 1609594493 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk" 1611870999 12644 732cb35d48fbbc205b045618916e121f ""
   "/home/parth/.texlive2020/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt1000.600pk" 1616027515 9468 339a9dd3b21f2a3fb0c529d975464fde ""
-  "/home/parth/Work/School/Computers/ECS132/finalproject/final.aux" 1616028803 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/parth/Work/School/Computers/ECS132/finalproject/final.tex" 1616028801 18872 d786416ebc75649f3be9039518161898 ""
+  "/home/parth/Work/School/Computers/ECS132/finalproject/final.aux" 1616028966 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/parth/Work/School/Computers/ECS132/finalproject/final.tex" 1616028965 19048 07efebfe9aa6d7906926f2b922e0012e ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tctt1000.tfm" 1136768653 1536 c5729d01ab121276cf99b309129349a0 ""
@@ -81,14 +81,14 @@
   "cdf_p1_1.png" 1616007894 34939 52d15805e4e6c0f5d0824a70c0dd8e45 ""
   "cdf_p1_2.png" 1616007894 36141 7783239ed2045a124fe346d59da17be5 ""
   "cdf_p1_3.png" 1616007894 35407 8eb7cee25371d0c93adeb7ff39b86951 ""
-  "final.aux" 1616028803 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
-  "final.tex" 1616028801 18872 d786416ebc75649f3be9039518161898 ""
+  "final.aux" 1616028966 8 a94a2480d3289e625eea47cd1b285758 "pdflatex"
+  "final.tex" 1616028965 19048 07efebfe9aa6d7906926f2b922e0012e ""
   "hist_p1_1.png" 1616007894 36061 867d69923bdb09d19cf7c80b5b44f5b7 ""
   "hist_p1_2.png" 1616007894 39238 8bb2d672756eb72376b37b2ce8ee91ce ""
   "hist_p1_3.png" 1616007894 42508 3fe302a85be3d957a86031db7df20b8f ""
   (generated)
-  "final.pdf"
-  "/home/parth/Work/School/Computers/ECS132/finalproject/final.pdf"
   "/home/parth/Work/School/Computers/ECS132/finalproject/final.log"
-  "final.log"
+  "/home/parth/Work/School/Computers/ECS132/finalproject/final.pdf"
+  "final.pdf"
   "final.aux"
+  "final.log"
