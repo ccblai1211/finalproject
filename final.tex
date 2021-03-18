@@ -180,26 +180,27 @@ Plotting B into the histogram, we get an approximate normal distribution in the 
 \noindent\includegraphics{Hist(PropActDriv).png}\\
 
 \noindent{\textbf{\LARGE{Investigation of average trip times using CALLTYPE:}}}
-\centering\noindent\includegraphics{Part3(Code).png}\\
+% \centering\noindent\includegraphics{Part3(Code).png}\\
+\begin{lstlisting}
+callSplit <- split(trainData, trainData$CALL_TYPE)
+
+i <- 1
+res <- list()
+for (call in callSplit) {
+	res[[i]] <- apply(call, 1, getDur);
+	i <- i + 1
+}
+  
+print(paste0('A: mean: ', mean(res[[1]]), 'var: ', var(res[[1]])))
+print(paste0('B: mean: ', mean(res[[2]]), 'var: ', var(res[[2]])))
+print(paste0('C: mean: ', mean(res[[3]]), 'var: ', var(res[[3]])))
+\end{lstlisting}
 
 \flushleft\par
-The trip times used in the data set have been given in terms of UNIX timestamps which make it hard to visualize. In order to get a better understanding of trip times, we decided to convert the timestamps into minutes using the following conversion rates:
-
-\begin{itemize}
-	\item One minute = 60 UNIX units
-	\item One hour = 3,600 UNIX units
-	\item One day = 86,400 UNIX unit
-\end{itemize}
+In order to obtain the trip times we took the length of the POLYTIME and multiplied it by 15 to obtain how many seconds a trip took. This was then divided by 60 to get the time in minutes.
 
 \par
-The equation to get minutes from UNIX timestamp:
-
-\begin{equation}
-Minutes = \frac{UNIX TIMESTAMP}{60}
-\end{equation}
-
-\par
-After we simply applied the mean() and var() functions to the newly converted TIMESTAMP variable to obtain the mean and variance
+We filtered the original dataset to contain only the CALL\_TYPE column and appended our time column to this new dataset. We then applied the mean() and var() functions to the newly converted minutes variable to obtain the mean and variance of the time.
 
 \par
 General Dataset Mean (TIMESTAMP):
