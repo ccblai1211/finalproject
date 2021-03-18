@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1616034045 "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.tex" "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.pdf" "ProjectReport" 1616034045
+["pdflatex"] 1616034387 "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.tex" "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.pdf" "ProjectReport" 1616034387
   "/etc/texmf/web2c/texmf.cnf" 1609594493 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.aux" 1616034045 8 a94a2480d3289e625eea47cd1b285758 ""
-  "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.tex" 1616034043 27311 5a84e7cd19c39ba0d782163cc4ee795b ""
+  "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.aux" 1616034387 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.tex" 1616034385 27311 5a84e7cd19c39ba0d782163cc4ee795b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -90,7 +90,7 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1609595551 1156129 cbb295ee8010ed513532afca992897f5 ""
   "Hist(PropActDriv).png" 1616007894 41362 c8150169974ff4131cf86b717c9c66b9 ""
   "ProjectReport.aux" 0 -1 0 "pdflatex"
-  "ProjectReport.tex" 1616034043 27311 5a84e7cd19c39ba0d782163cc4ee795b ""
+  "ProjectReport.tex" 1616034385 27311 5a84e7cd19c39ba0d782163cc4ee795b ""
   "SimerpalPartA.tex" 1616031856 1958 7f26b328601c2c858c2193623c1287d8 ""
   "cdf_p1_1.png" 1616007894 34939 52d15805e4e6c0f5d0824a70c0dd8e45 ""
   "cdf_p1_2.png" 1616007894 36141 7783239ed2045a124fe346d59da17be5 ""
@@ -104,6 +104,6 @@
   (generated)
   "ProjectReport.out"
   "ProjectReport.log"
-  "ProjectReport.aux"
   "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.log"
   "/home/parth/Work/School/Computers/ECS132/finalproject/ProjectReport.pdf"
+  "ProjectReport.aux"
