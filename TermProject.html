@@ -1,0 +1,349 @@
+
+<!-- saved from url=(0063)http://heather.cs.ucdavis.edu/~matloff/132/Hwk/TermProject.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body bgcolor="white" cz-shortcut-listen="true">
+<h1>ECS 132 Term Project</h1>
+
+<h2>Important dates</h2>
+
+<ul>
+
+<li> <b>Progress report:</b>  Due Monday, March 8, 11:59 pm, in the form
+of an e-mail message to me.  Must state the contribution of each group 
+member so far.  
+</li> <p></p>
+
+<li> <b>Submission:</b>  Scheduled final exam day (no written final),
+Wednesday, March 17, 11:59 pm.  <b>NO LATE SUBMISSIONS</b>. 
+</li> <p></p> 
+
+</ul>
+
+<p>
+</p>
+
+<h2>Downloads</h2>
+
+<p>
+In Problem B, you will be using my 
+<a href="http://heather.cs.ucdavis.edu/~matloff/132/Hwk/github.com/matloff/regtools">
+<b>regtools</b> package.
+</a> There are various ways to install it on your computer, e.g.
+for a Unix-family system.
+</p>
+
+<pre>git clone http://github.com/matloff/regtools
+mkdir ~/R
+R CMD INSTALL -l ~/R regtools
+</pre>
+
+<p>
+and then add this line to your R startup file, <b>~/.Rprofile</b>:
+</p>
+
+<pre>.libPaths("/home/yourusername/R")
+</pre>
+
+<p>
+Note that <b>regtools</b> in turn requires several other packages to be
+installed.  If you don't have them already installed, you'll get an
+error message telling you which ones you need.
+</p>
+
+<p>
+For Problem B, you will also need to download the 
+<a href="https://archive.ics.uci.edu/ml/datasets/Taxi+Service+Trajectory+-+Prediction+Challenge,+ECML+PKDD+2015">
+Porto taxi trip data.</a>  We will use only <b>train.csv</b>, which you
+can read using <b>read.csv()</b>.
+</p>
+
+<h2>Problem A</h2>
+
+<p>
+("Scavenger hunt.") <b>Each person</b> in your group must find, and write a
+report on, a research poster somewhere in a campus building.  The poster
+must use p-values or equivalents such as saying something like "The
+confidence intervals for the difference between two means does not
+contain 0."
+</p>
+
+<p>
+<b>Broadening due to pandemic:</b>  Many of you are not in Davis, so you
+can find a research paper online.  It still must have a UCD professor as one
+of the authors.
+</p>
+
+<p>
+In a paragraph or two, state the scientific topic being researched, and
+discuss how using confidence intervals instead of significance tests
+might result in a more insightful analysis, and discuss possible dangers
+reliance of p-values might bring in this case.
+</p>
+
+<p>
+Each section must have the name of
+the team member who did the analysis for this example and wrote this
+section of your report.  Again, note that <b>there must be a different 
+example written by each team member.</b>  The sections for Problem A
+should be titled accordingly.
+</p>
+
+<p>
+You may wish to cite authority here, e.g. 
+<a href="https://www.amstat.org/asa/News/ASA-P-Value-Statement-Viewed-150000-Times.aspx">
+this announcement</a> and its links.
+</p>
+
+<p>
+Be sure to include the URL for the paper you analyze.
+</p>
+
+<h2>Problem B</h2>
+
+<p>
+As noted, this problem will involve analysis of the Porto taxi trip
+data.  Here are some general rules:
+</p>
+
+<ul>
+
+<li> Note that many of the parts of this problem will be rather
+open-ended, using terms like <i>explore</i> and <i>investigate.</i> 
+But when possible, formal statistical inference methods must be used.
+</li> <p></p> 
+
+<li> So, there is flexibility here, but note that (a) you are restricted to
+using the methods of our course and (b) you are restricted to using R
+throughout, including for generating graphs.  </li> <p></p> 
+
+<li> For graphics, use either (i) base-R graphics, (ii) the
+<b>lattice</b> package or (iii) the <b>ggplot2</b> package.  Our book
+contains a tutorial on the latter, but there are tons of examples of all
+three on the Web.  There are no specific graphical tasks delineated
+below, but you'll definitely need good pictures to write a good,
+professional quality report.
+</li> <p></p> 
+
+<li> The <b>tapply()</b> function is one of the most powerful in R
+(also, the related <b>split()</b>).  You may find it useful.
+</li> <p></p> 
+
+<li> 
+Do not use another package or statistical method without getting my approval.
+</li> <p></p> 
+
+<li> The UCI data repository is quite famous in the machine learning
+world.  Thus, its datasets tend to have many analyses on the Web.  You
+can probably find some for this Porto taxi data, and there are many,
+many analyses of the various NYC taxi datasets on the Web.  You are very
+welcome to browse through these, but if you use anything that you find
+there, <i>you must cite it in your report.</i> </li> <p></p> 
+
+<li> <b>It is imperative that you start early.</b>  There are many
+things to be done that you may not realize at the outset.  You'll need
+to figure out how the software works, which can sometimes be challenging
+in the case of graphics.  You'll encounter various idiosyncrasies in the
+data, and will need to figure out how to handle them.  You'll find
+yourself wondering, "Well, in actuality, what <i>does</i> that
+statistical method do?"  This is a rather large dataset; some
+computations may have long run times.  Etc.  We are happy to help you
+through problems you encounter, but clearly you need to allocate time to
+deal with these issues.
+</li> <p></p> 
+
+</ul>
+
+<p>
+Here are your tasks:
+</p>
+
+<ul>
+
+<li> Let T denote trip duration.  Explore finding a model for
+f<sub>T</sub> from one of our density families.
+</li> <p></p> 
+
+<li> Let B denote the proportion of time a driver is busy,
+i.e. actually driving rather than waiting for the next fare.
+Explore finding a model for f<sub>B</sub> from one of our density families.
+</li> <p></p> 
+
+<li> Investigate whether the type of call used to summon the taxi makes
+much difference in mean trip time.
+</li> <p></p> 
+
+<li> Develop models for predicting trip time from other variables, both
+the explicit ones and also trip distance.  (This task has 
+many subparts, and will probably take up most of your time.)
+</li> <p></p> 
+
+</ul>
+
+<p>
+Details of the prediction task:
+</p>
+
+<ul>
+
+<li> First try a linear model.  
+<p></p>
+
+   <ul>
+
+   <li> Note that "linear" means "linear in the beta parameters."  You
+   can and should try polynomial models, using <b>qePolyLin()</b>.
+   </li> <p></p> 
+
+   <li> Find an approximate 95% confidence interval for E(Y | X = u)
+   (X, u vectors), your choice of u.
+   </li> <p></p> 
+
+   </ul>
+</li> <p></p>
+
+<li> Then try two machine learning models, chosen from
+<b>qeKNN()</b>, 
+<b>qeRF()</b>, 
+<b>qeLASSO()</b>, 
+<b>qeGBoost()</b>
+and 
+<b>qeNeural()</b>.
+In each case, you may wish to try some nondefault values for the
+hyperparameters.  (Some of the models have many hyperparameters, some of
+them very esoteric; you need not learn them all.)
+<p></p>
+
+<p>
+I suggest you use 
+<a href="http://heather.cs.ucdavis.edu/artofml/draft.pdf">
+the rough draft of my forthcoming book</a> to learn what these methods
+do.  Or, there are many good, usually brief, tutorials on the Web.
+I will give very short overviews of the ML methods in class.
+</p></li> <p></p>
+
+<li> Compare the predictive power of the methods you used above (several
+linear models plus two ML).
+</li> <p></p> 
+
+
+</ul>
+
+<h2>Important General Rules</h2>
+
+<p>
+<b>PLEASE FOLLOW THESE RULES 100%!</b>
+</p>
+
+<ul>
+
+<li> Don't skimp on time devoted to the writing.  <b>The phrasing
+matters!</b>  This is true both in terms of having good, professional
+writing quality, but also in terms of 
+<i>proper statistical interpretation,</i> which will be vital 
+in your report.
+</li> <p></p> 
+
+<li> You must use LaTeX and R throughout.
+</li> <p></p> 
+
+<li> Submit your report, including all files, i.e. <b>.tex</b>,
+<b>.pdf</b>, R code (see below), any image files, etc., to my
+<b>handin</b> site on CSIF (NOT the TAs' sites), username
+<b>matloff</b>, directory <b> 132project</b>.
+</li> <p></p> 
+
+<li> Your LaTeX file must be named <b>ProjectReport.tex</b>, and the
+corresponding PDF <b>ProjectReport.pdf</b>.  The grading script will
+look for these; don't disappoint the grading script!
+</li> <p></p> 
+
+<li> The name of your submitted file must
+be of the form <b> email1.email2....tar </b>, where each
+<b>emaili</b> is the UCD e-mail address of group
+member i, e.g. <b> bclinton.gwbush.bobama.dtrump.tar</b>.
+Note the periods separating fields.  Don't get the address wrong!
+Otherwise the grading script may not give someone credit.
+</li> <p></p>
+
+<li>  Your <b>.tar</b> file must contain only regular files, NO
+SUBDIRECTORIES!!!!  And <b>.tar</b> does NOT mean <b>.tar.gz</b> or
+<b>.tar.bz2</b> (or for that matter <b>.rar</b>, which one student used
+once).  The grading script will execute
+<p></p>
+
+<pre>tar xf youraddresses.tar  # unpack
+ls ProjectReport.tex ProjectReport.pdf  # check for proper files
+xpdf ProjectReport.pdf  # view PDF
+</pre>
+
+<p> Note that the script will NOT do <b>cd</b>.
+</p></li> <p></p> 
+
+<li> Place all your code in a file <b>TermProject.R</b>, <i>as well
+as</i> in an Appendix to your report (LaTeX <b> \appendix \section{}</b>).  
+I may execute your code, so make sure it is runnable.
+</li> <p></p> 
+
+<li> Absolutely NO late reports will be accepted.  <b>As you near the
+deadline, keep submitting what you have</b> (each one will overwrite
+the last), so that at least you will get a lot of credit even if you
+don't finish.
+</li> <p></p>
+
+<li> Include a section listing each team member's contribution to
+the project -- who did what.  If a member did not participate, do
+not include him/her in this section, nor in the <b>.tar</b> file name.
+<b>Don't forget this section!</b>
+</li> <p></p>
+
+
+<li> <b>DOUBLE-CHECK THAT YOU ARE MEETING ALL SPECS!</b>  Whoever does
+the actual turning in of your submission, impress upon him/her that this
+is a huge responsiblity that can affect everyone's grade.
+
+</li></ul>
+
+<h2><a name="grading">Grading</a></h2>
+
+<h3>General commnets:</h3>
+
+   <ul>
+
+   <li> Groups that put in a reasonable amount of time -- and thought! --
+   almost always receive an A or A+ grade on the project.  Groups that
+   do not complete the project usually get a D grade.  <b>PLEASE START
+   EARLY!</b>
+   </li> <p></p>
+
+   <li> As explained in class, groups that do good work on the project
+   receive an extra bonus in their course grades, beyond what your quiz
+   and homework grades are.  The boost is always at least one
+   notch (e.g. B to B+) and typically two notches (e.g. B to A-).  E.g. a
+   student could have strictly B work in the homework and quizzes and
+   yet still get an A- in the course.
+   </li> <p></p>
+
+   <li> A+ grades are very possible, and can have a significant impact
+   on your course grade, letters of recommendation, knighthoods,
+   marriage prospects, coronations, etc.
+   </li> <p></p>
+
+   </ul>
+
+<h3>Criteria:</h3>
+
+   <ul>
+
+   <li> Technical content of the work (correctness, thoroughness etc.).
+   </li> <p></p>
+
+   <li> Adherence to instructions. </li> <p></p>
+
+   <li> Professional quality of the work:  Clear, engaging writing,
+   using correct grammar; it need not (should not) be pretentious, but
+   avoid being too colloquial ("the mean was kinda low").  Presentation
+   need not be fancy, but graphs and tables should be used where helpful.
+   </li> <p></p>
+
+   </ul>
+
+<div id="uvpn_rate_us" style="display: none;">            <div class="uvpn_wrap">                <div class="uvpn_logo-ext">                    <div class="uvpn_logo-wrap">                        <img src="chrome-extension://jaoafpkngncfpfggjefnekilbkcpjdgp/img/128.png">                    </div>                </div>                <div class="uvpn_title">                    Don’t Forget to Rate Us                </div>                <div class="uvpn_desc">                    If you enjoy our product, give us 5 stars. It helps so much!                </div>                <div class="stars">                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                    <svg xmlns="http://www.w3.org/2000/svg" width="1235" height="1175" viewBox="0 0 1235 1175">                        <path fill="#cf6218" d="M0,449h1235l-999,726 382-1175 382,1175z"></path>                    </svg>                </div>                <a target="_blank" href="https://chrome.google.com/webstore/detail/uvpn-free-and-unlimited-v/jaoafpkngncfpfggjefnekilbkcpjdgp/reviews" id="rate_btn_rateus" class="uvpn_rate-btn uvpn_btn">                    Rate Us                </a>                <div id="close_btn_rateus" class="uvpn_later-btn uvpn_btn">                    Not Now                </div>            </div>        </div></body></html>

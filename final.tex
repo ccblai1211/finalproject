@@ -252,4 +252,32 @@ Variance (Call Type C) = 269.50
 \par
 The Variance of the 3 Call Types are fairly close with the exception of Call Type C. This indicates that there is a lot of volatility in the trip times for Call Type C. This could be caused by the fact that Call Type C takes riders from various methods instead of a set way of getting riders.
 
+\noindent{\textbf{\LARGE{Moddling the Data}}}\\
+\textbf{Models:}
+\par
+In the term project we decided to use the following models to visualize our data:
+\begin{itemize}
+	\item Linear
+	\item Linear Polynomial
+	\item k-Nearest Neighbors
+	\item Boosting
+\end{itemize}
+
+\textbf{Gathering the parameters:}
+\par
+The first model we decided to take on was modeling the distance vs the 
+speed. In order to plot these two variables on a model we had to obtain 
+the distance and speed. The distance we obtained by utilizing the 
+coordinates from POLYLINE column in the dataset. After we just took the 
+start and end points of the formula and applied the Haversine distance 
+formula. The Haversine (or great circle) distance is the angular distance 
+between two points on the surface of a sphere. It is a very accurate way 
+of computing distances between two points on the surface of a sphere using 
+the latitude and longitude of the two points.
+\begin{equation*}
+	\begin{aligned}
+		(x1,y1) = Starting Coordinates\\
+		(x1,y1) =Ending Coordinates
+	\end{aligned}
+\end{equation*}
 \end{document}
